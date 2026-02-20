@@ -6,14 +6,14 @@
         <meta name="theme-color" content="#556B2F">
         <title><?= $_ENV['APP_NAME'] ?></title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta name="description" content="Sitio web de Armeria Águila Comandos">
+        <meta name="description" content="Sitio web de Servicios Valensa">
         <meta name="keywords"
-            content="armas, municiones, escopetas, rifles, pistolas, navajas, linternas, miras, binoculares, ropa, calzado, equipo táctico, accesorios, seguridad, defensa, tiro deportivo, caza, airsoft, paintball, entrenamiento, cursos, capacitación, armas de fuego, municiones, accesorios, seguridad, defensa, tiro deportivo, caza, airsoft, paintball, entrenamiento, cursos, capacitación">
+            content="maquinaria, pozos, construccion, servicios, maquinaria pesada, pozos profundos, construccion de pozos, servicios de construccion, maquinaria para pozos, maquinaria para construccion">
         <meta name="robots" content="index, follow">
         <link rel="canonical" href="<?= $_ENV['HOST'] ?>">
 
-        <meta property="og:title" content="Armeria Águila Comandos">
-        <meta property="og:description" content="Sitio web de Armeria Águila Comandos">
+        <meta property="og:title" content="Servicios Valensa">
+        <meta property="og:description" content="Sitio web de Servicios Valensa">
         <meta property="og:image" content="<?= $_ENV['HOST'] ?>/images/logo.jpeg">
         <meta property="og:url" content="<?= $_ENV['HOST'] ?>">
         <meta property="og:type" content="website">
@@ -21,8 +21,8 @@
         <meta property="og:image:height" content="300">
 
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Armeria Águila Comandos">
-        <meta name="twitter:description" content="Sitio web de Armeria Águila Comandos">
+        <meta name="twitter:title" content="Servicios Valensa">
+        <meta name="twitter:description" content="Sitio web de Servicios Valensa">
         <meta name="twitter:image" content="<?= $_ENV['HOST'] ?>/images/logo.jpeg">
         <meta name="twitter:url" content="<?= $_ENV['HOST'] ?>">
 
