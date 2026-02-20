@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <meta name="theme-color" content="#556B2F">
+        <meta name="theme-color" content="#334FA0">
         <title><?= $_ENV['APP_NAME'] ?></title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta name="description" content="Sitio web de Servicios Valensa">
