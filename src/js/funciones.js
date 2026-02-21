@@ -23,7 +23,7 @@ export const Toast = Swal.mixin({
     showConfirmButton: false,
     timer: 3000,
     timerProgressBar: true,
-    theme: 'dark',
+    theme: 'light',
     didOpen: (toast) => {
         toast.addEventListener('mouseenter', Swal.stopTimer)
         toast.addEventListener('mouseleave', Swal.resumeTimer)
