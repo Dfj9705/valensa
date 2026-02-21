@@ -96,13 +96,13 @@ class Producto extends ActiveRecord
     {
         try {
             $query = "SELECT 
-            (select sum(mop_cantidad) from movimientos_productos where movimientos_productos.pro_id = productos.pro_id and movimientos_productos.mop_tipo = 'entrada')
+            COALESCE((select sum(mop_cantidad) from movimientos_productos where movimientos_productos.pro_id = productos.pro_id and movimientos_productos.mop_tipo = 'entrada'), 0)
             + 
-            (select sum(mop_cantidad) from movimientos_productos where movimientos_productos.pro_id = productos.pro_id and movimientos_productos.mop_tipo = 'devolucion')
+            COALESCE((select sum(mop_cantidad) from movimientos_productos where movimientos_productos.pro_id = productos.pro_id and movimientos_productos.mop_tipo = 'devolucion'), 0)
             - 
-            (select sum(mop_cantidad) from movimientos_productos where movimientos_productos.pro_id = productos.pro_id and movimientos_productos.mop_tipo = 'salida') 
+            COALESCE((select sum(mop_cantidad) from movimientos_productos where movimientos_productos.pro_id = productos.pro_id and movimientos_productos.mop_tipo = 'salida'), 0) 
             - 
-            (select sum(mop_cantidad) from movimientos_productos where movimientos_productos.pro_id = productos.pro_id and movimientos_productos.mop_tipo = 'venta') as stock
+            COALESCE((select sum(mop_cantidad) from movimientos_productos where movimientos_productos.pro_id = productos.pro_id and movimientos_productos.mop_tipo = 'venta'), 0) as stock
             FROM productos WHERE pro_id = $id";
 
             $producto = $this->fetchFirst($query);
