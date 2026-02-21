@@ -123,7 +123,7 @@ class ActiveRecord
     // Busqueda Where con Columna 
     public static function where($columna, $valor, $condicion = '=')
     {
-        $query = "SELECT * FROM " . static::$tabla . " WHERE ${columna} ${condicion} '${valor}'";
+        $query = "SELECT * FROM " . static::$tabla . " WHERE $columna $condicion '$valor'";
         $resultado = self::consultarSQL($query);
         return $resultado;
     }
