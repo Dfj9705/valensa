@@ -13,13 +13,13 @@
         </div>
         <div class="row contact-info position-relative g-0 mb-5">
             <div class="col-lg-6">
-                <a href="tel:+50250189914" class="d-flex justify-content-lg-center text-decoration-none bg-primary p-4">
+                <a href="tel:+50253682021" class="d-flex justify-content-lg-center text-decoration-none bg-primary p-4">
                     <div class="icon-box-light flex-shrink-0">
                         <i class="bi bi-whatsapp text-dark"></i>
                     </div>
                     <div class="ms-3">
                         <h5 class="text-white">Llamanos o escribenos</h5>
-                        <h2 class="text-white mb-0">+502 50189914</h2>
+                        <h2 class="text-white mb-0">+502 53682021</h2>
                     </div>
                 </a>
             </div>
