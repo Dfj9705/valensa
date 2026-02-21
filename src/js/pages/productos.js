@@ -165,10 +165,10 @@ const construirCarousel = (producto, images) => {
             carouselInner.appendChild(carouselItem);
             const indicator = document.createElement('button');
             indicator.type = 'button';
-            indicator.setAttribute('data-bs-target', `#carousel - ${producto.pro_id} `);
+            indicator.setAttribute('data-bs-target', `#carousel-${producto.pro_id}`);
             indicator.setAttribute('data-bs-slide-to', index);
             indicator.setAttribute('aria-current', index === 0 ? 'true' : '');
-            indicator.setAttribute('aria-label', `Slide ${index + 1} `);
+            indicator.setAttribute('aria-label', `Slide${index + 1}`);
             if (index === 0) {
                 indicator.classList.add('active');
             }
