@@ -123,7 +123,7 @@ const construirCardProducto = (producto) => {
     cardText.textContent = producto.pro_descripcion;
     buttonWhatsapp.classList.add('btn', 'btn-outline-success', 'float-end');
     buttonWhatsapp.innerHTML = '<i class="fa fa-whatsapp me-2"></i> Consultar';
-    buttonWhatsapp.href = `https://wa.me/502${process.env.TELEFONO}?text=Hola,%20quiero%20más%20información%20sobre%20el%20producto%20${producto.pro_nombre}`;
+    buttonWhatsapp.href = `https://wa.me/${process.env.TELEFONO}?text=Hola,%20quiero%20más%20información%20sobre%20el%20producto%20${producto.pro_nombre}`;
     buttonWhatsapp.target = '_blank';
     buttonWhatsapp.style.marginBottom = '0';
     carousel.appendChild(construirCarousel(producto, producto.pro_imagenes));
