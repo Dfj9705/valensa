@@ -68,10 +68,13 @@
 
 
                     <div class="d-flex">
-                        <p class="me-3"><span class="align-middle"><i class="bi bi-whatsapp me-2"></i>+502
-                                53682021</span></p>
-                        <p><span class="align-middle"><i
-                                    class="bi bi-envelope me-2"></i><?= $_ENV['EMAIL_TO_ADDRESS'] ?></span>
+                        <p class="me-3"><span class="align-middle"><i class="bi bi-whatsapp me-2"></i><a
+                                    href="https://wa.me/50253682021?text=Hola,%20quiero%20más%20información"
+                                    class="text-decoration-none text-dark">+502
+                                    53682021</a></span></p>
+                        <p><span class="align-middle"><i class="bi bi-envelope me-2"></i><a
+                                    href="mailto:<?= $_ENV['EMAIL_TO_ADDRESS'] ?>"
+                                    class="text-decoration-none text-dark"><?= $_ENV['EMAIL_TO_ADDRESS'] ?></a></span>
 
                     </div>
 
@@ -127,11 +130,11 @@
                         </a>
                         <p class="fs-6 mb-4 fst-italic text-white">Productos y servicios de calidad</p>
 
-                        <p><a class="text-decoration-none text-white" href="tel:+50253682021"><i
-                                    class="fa fa-phone-alt me-2"></i>+502 53682021</p></a>
+                        <p><a class="text-decoration-none text-white" href="tel:+50231862624"><i
+                                    class="fa fa-phone-alt me-2"></i>+502 31862624</p></a>
                         <p><a class="text-decoration-none text-white"
-                                href="https://wa.me/50231862624?text=Hola,%20quiero%20más%20información"><i
-                                    class="fa fa-whatsapp me-2"></i>+502 31862624</p></a>
+                                href="https://wa.me/50253682021?text=Hola,%20quiero%20más%20información"><i
+                                    class="fa fa-whatsapp me-2"></i>+502 53682021</p></a>
                         <p><a class="text-decoration-none text-white" href="mailto:<?= $_ENV['EMAIL_TO_ADDRESS'] ?>"><i
                                     class="fa fa-envelope me-2"></i><?= $_ENV['EMAIL_TO_ADDRESS'] ?></p></a>
                         <p><a class="text-decoration-none text-white" target="_blank"
