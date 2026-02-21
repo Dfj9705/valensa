@@ -308,8 +308,8 @@ body {
     @for $i from 1 through 2 {
         #header-carousel .carousel-item-#{$i} {
             position: relative;
-            min-height: 25vh;
-            max-height: 25vh;
+            min-height: 40vh;
+            max-height: 40vh;
         }
         
         #header-carousel .carousel-item-#{$i} img {
