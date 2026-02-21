@@ -1,8 +1,7 @@
 import { Toast } from "../funciones.js";
 import GLightbox from 'glightbox';
 
-window.GLightbox = GLightbox;
-GLightbox({
+const lightbox = GLightbox({
     selector: '.glightbox-product',
     loop: true,
     touchNavigation: true,
@@ -56,6 +55,7 @@ const buscarProductos = async (e = null) => {
                     `;
                 }
                 productosDiv.appendChild(row);
+                lightbox.reload();
                 break;
             case 2:
                 icon = "warning"
@@ -138,7 +138,7 @@ const construirCarousel = (producto, images) => {
     const indicators = document.createElement('div');
     indicators.classList.add('carousel-indicators');
     carousel.classList.add('carousel', 'slide');
-    carousel.id = `carousel - ${producto.pro_id} `;
+    carousel.id = `carousel-${producto.pro_id}`;
     carousel.setAttribute('data-bs-ride', 'carousel');
     const carouselInner = document.createElement('div');
     carouselInner.classList.add('carousel-inner');
@@ -146,7 +146,7 @@ const construirCarousel = (producto, images) => {
         imagesArray.forEach((image, index) => {
             const carouselItem = document.createElement('div');
             const a = document.createElement('a');
-            a.onclick = "return false;";
+            // a.onclick = "return false;";
             a.href = `${process.env.IMAGES_URL}${image}`;
             a.classList.add('glightbox-product', 'd-block');
             a.setAttribute('data-gallery', `product-${producto.pro_id}`);
