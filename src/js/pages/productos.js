@@ -1,6 +1,8 @@
 import { Toast } from "../funciones.js";
 import GLightbox from 'glightbox';
 
+let productos = [];
+
 const lightbox = GLightbox({
     selector: '.glightbox-product',
     loop: true,
@@ -13,11 +15,61 @@ const spinner2 = document.getElementById('spinner2');
 
 const buscarProductos = async (e = null) => {
     if (e) e.preventDefault();
+    spinner2.classList.remove('d-none');
 
-    const formData = new FormData();
     productosDiv.innerHTML = ``;
+
+    spinner2.classList.add('d-none');
+
+    const { codigo, mensaje, detalle, datos } = await obtenerProductos();
+
+    let icon = "info";
+    switch (codigo) {
+        case 1:
+            icon = "success"
+            productos = datos;
+            console.log(datos);
+            const row = document.createElement('div');
+            row.classList.add('row');
+            if (datos.length > 0) {
+                datos.forEach(producto => {
+                    row.appendChild(construirCardProducto(producto));
+                });
+            } else {
+                row.innerHTML = `
+                        <div class="col-12">
+                            <div class="alert alert-primary" role="alert">
+                                No se encontraron productos. Intenta con otros filtros.
+                            </div>
+                        </div>
+                    `;
+            }
+            productosDiv.appendChild(row);
+            lightbox.reload();
+            break;
+        case 2:
+            icon = "warning"
+            console.log(datos);
+
+            break;
+        case 0:
+
+            icon = "error"
+            console.log(detalle);
+            break;
+
+    }
+
+    Toast.fire({
+        icon,
+        title: mensaje,
+    })
+
+}
+
+const obtenerProductos = async (e) => {
     try {
-        spinner2.classList.remove('d-none');
+        const formData = new FormData();
         const url = `/API/productos/buscar`
         const headers = new Headers();
         headers.append('X-Requested-With', 'fetch');
@@ -29,51 +81,7 @@ const buscarProductos = async (e = null) => {
 
         const respuesta = await fetch(url, config);
         const data = await respuesta.json();
-        spinner2.classList.add('d-none');
-
-        const { codigo, mensaje, detalle, datos } = data;
-        console.log(datos)
-
-        let icon = "info";
-        switch (codigo) {
-            case 1:
-                icon = "success"
-                console.log(data);
-                const row = document.createElement('div');
-                row.classList.add('row');
-                if (datos.length > 0) {
-                    datos.forEach(producto => {
-                        row.appendChild(construirCardProducto(producto));
-                    });
-                } else {
-                    row.innerHTML = `
-                        <div class="col-12">
-                            <div class="alert alert-primary" role="alert">
-                                No se encontraron productos. Intenta con otros filtros.
-                            </div>
-                        </div>
-                    `;
-                }
-                productosDiv.appendChild(row);
-                lightbox.reload();
-                break;
-            case 2:
-                icon = "warning"
-                console.log(data);
-
-                break;
-            case 0:
-
-                icon = "error"
-                console.log(detalle);
-                break;
-
-        }
-
-        Toast.fire({
-            icon,
-            title: mensaje,
-        })
+        return data;
     } catch (error) {
         console.log(error);
     }
@@ -187,3 +195,28 @@ const construirCarousel = (producto, images) => {
     carousel.appendChild(indicators);
     return carousel;
 }
+
+const filtarProductos = (e) => {
+    const { value } = e.target;
+    const productosFiltrados = productos.filter(producto => producto.pro_nombre.toLowerCase().includes(value.toLowerCase()));
+    productosDiv.innerHTML = ``;
+    const row = document.createElement('div');
+    row.classList.add('row');
+    if (productosFiltrados.length > 0) {
+        productosFiltrados.forEach(producto => {
+            row.appendChild(construirCardProducto(producto));
+        });
+    } else {
+        row.innerHTML = `
+                        <div class="col-12">
+                            <div class="alert alert-primary" role="alert">
+                                No se encontraron productos. Intenta con otros filtros.
+                            </div>
+                        </div>
+                    `;
+    }
+    productosDiv.appendChild(row);
+    lightbox.reload();
+}
+
+buscar.addEventListener('input', filtarProductos);

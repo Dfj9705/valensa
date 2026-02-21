@@ -11,8 +11,8 @@
             <div class="col-md-12 wow fadeIn" data-wow-delay="0.1s">
                 <label for="buscar">Buscar</label>
                 <div class="input-group">
-                    <input class="form-control" type="search" name="buscar" id="buscar" placeholder="Buscar">
-                    <span class="input-group-text"><i class="bi bi-search"></i></span>
+                    <input class="form-control" type="search" name="buscar" id="buscar"
+                        placeholder="Escriba el nombre del producto">
                 </div>
             </div>
         </div>

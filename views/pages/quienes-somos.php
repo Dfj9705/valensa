@@ -15,7 +15,7 @@
                     soluciones integrales para proyectos de captación de agua, obras hidráulicas y perforaciones
                     técnicas, garantizando calidad, precisión y respaldo profesional en cada etapa del proceso.</p>
 
-                <p class="mb-0 fs-5 text-dark">Trabajamos de la mano con perforistas, ingenieros, constructores y
+                <p class="mb-5 fs-5 text-dark">Trabajamos de la mano con perforistas, ingenieros, constructores y
                     empresas del sector, ofreciendo
                     productos confiables y asesoría técnica especializada para asegurar resultados eficientes y
                     duraderos.</p>
