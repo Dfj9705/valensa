@@ -132,13 +132,13 @@ const construirCardProducto = (producto) => {
     return div;
 }
 
-const construirCarousel = (arma, images) => {
+const construirCarousel = (producto, images) => {
     const imagesArray = JSON.parse(images);
     const carousel = document.createElement('div');
     const indicators = document.createElement('div');
     indicators.classList.add('carousel-indicators');
     carousel.classList.add('carousel', 'slide');
-    carousel.id = `carousel - ${arma.id} `;
+    carousel.id = `carousel - ${producto.pro_id} `;
     carousel.setAttribute('data-bs-ride', 'carousel');
     const carouselInner = document.createElement('div');
     carouselInner.classList.add('carousel-inner');
@@ -149,12 +149,12 @@ const construirCarousel = (arma, images) => {
             a.onclick = "return false;";
             a.href = `${process.env.IMAGES_URL}${image}`;
             a.classList.add('glightbox-product', 'd-block');
-            a.setAttribute('data-gallery', `product-${arma.id}`);
-            a.setAttribute('data-title', arma.pro_nombre);
+            a.setAttribute('data-gallery', `product-${producto.pro_id}`);
+            a.setAttribute('data-title', producto.pro_nombre);
             const img = document.createElement('img');
             img.src = `${process.env.IMAGES_URL}${image}`;
             img.classList.add('d-block', 'w-100');
-            img.alt = arma.pro_nombre;
+            img.alt = producto.pro_nombre;
             img.style = 'cursor: zoom-in;';
             a.appendChild(img);
             carouselItem.appendChild(a);
@@ -165,7 +165,7 @@ const construirCarousel = (arma, images) => {
             carouselInner.appendChild(carouselItem);
             const indicator = document.createElement('button');
             indicator.type = 'button';
-            indicator.setAttribute('data-bs-target', `#carousel - ${arma.id} `);
+            indicator.setAttribute('data-bs-target', `#carousel - ${producto.pro_id} `);
             indicator.setAttribute('data-bs-slide-to', index);
             indicator.setAttribute('aria-current', index === 0 ? 'true' : '');
             indicator.setAttribute('aria-label', `Slide ${index + 1} `);
