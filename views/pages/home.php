@@ -16,9 +16,9 @@
                                     class="fs-4 mb-2 fst-italic text-white wow animate__animated animate__fadeIn text-start">
                                     Maquinas perforadoras de pozos de agua, minería y construcción.
                                 </p>
-                                <a href="<?= $_ENV['HOST'] ?>/productos/maquinaria"
+                                <a href="<?= $_ENV['HOST'] ?>/productos"
                                     class="btn btn-primary wow animate__animated animate__fadeIn">Ver
-                                    más</a>
+                                    catálogo</a>
                             </div>
                         </div>
                     </div>
