@@ -41,7 +41,7 @@
     <div class="container">
         <div class="row g-0 feature-row">
             <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                <div class="feature-1 border h-100 p-5 text-white">
+                <div class="feature-1 border h-100 p-5 text-white d-flex flex-column justify-content-between">
                     <h5 class="mb-3 fs-4">Maquinaría para perforaciones</h5>
                     <p class="mb-3">Maquinaría para perforaciones en pozos de agua, minería y construcción.</p>
                     <a href="<?= $_ENV['HOST'] ?>/productos"
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                <div class="feature-2 border h-100 p-5 text-white">
+                <div class="feature-2 border h-100 p-5 text-white d-flex flex-column justify-content-between">
                     <h5 class="mb-3 fs-4">Accesorios para perforaciones</h5>
                     <p class="mb-3 text-light">Accesorios para perforaciones en pozos de agua, minería y construcción.
                     </p>
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                <div class="feature-3 border h-100 p-5 text-white">
+                <div class="feature-3 border h-100 p-5 text-white d-flex flex-column justify-content-between">
                     <h5 class="mb-3 fs-4">Estudios</h5>
                     <p class="mb-3 text-light">Estudios para perforaciones en pozos de agua, minería y construcción.</p>
                     <a target="_blank"
