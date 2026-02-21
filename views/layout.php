@@ -136,8 +136,8 @@
                                     class="fa fa-envelope me-2"></i><?= $_ENV['EMAIL_TO_ADDRESS'] ?></p></a>
                         <p><a class="text-decoration-none text-white" target="_blank"
                                 href="https://www.google.com/maps/dir/?api=1&destination=armeria%20aguila%20comandos%2C%20jutiapa%2C%20jutiapa"><i
-                                    class="fa fa-map-marker-alt me-2"></i>Calle escuela, zona 0, local A, Jutiapa,
-                                Jutiapa</p></a>
+                                    class="fa fa-map-marker-alt me-2"></i>0 CALLE PARQUE ALDEA AMBERES, SANTA ROSA DE
+                                LIMA, SANTA ROSA</p></a>
                         <div class="d-flex mt-4">
                             <a class="btn btn-lg-square btn-primary me-2"
                                 href="https://www.facebook.com/share/1CNySxztE8/?mibextid=wwXIfr" target="__blank"><i
