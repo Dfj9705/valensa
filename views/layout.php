@@ -69,7 +69,7 @@
 
                     <div class="d-flex">
                         <p class="me-3"><span class="align-middle"><i class="bi bi-whatsapp me-2"></i>+502
-                                32832297</span></p>
+                                53682021</span></p>
                         <p><span class="align-middle"><i
                                     class="bi bi-envelope me-2"></i><?= $_ENV['EMAIL_TO_ADDRESS'] ?></span>
 
@@ -102,17 +102,11 @@
                         </div>
                         <div class="ms-auto d-none d-lg-flex">
                             <a class="btn btn-sm-square btn-primary ms-2" target="_blank" aria-label="Enlace a Facebook"
-                                href="https://www.facebook.com/share/1NmhsiXEEs/?mibextid=wwXIfr"><i
+                                href="https://www.facebook.com/share/1CNySxztE8/?mibextid=wwXIfr"><i
                                     class="bi bi-facebook"></i><span class="d-none">Enlace a Facebook</span></a>
-                            <a class="btn btn-sm-square btn-primary ms-2" target="_blank" aria-label="Enlace a Facebook"
-                                href="https://www.facebook.com/share/18EFKQPoRt/?mibextid=wwXIfr
-"><i class="bi bi-facebook"></i><span class="d-none">Enlace a Facebook</span></a>
                             <a class="btn btn-sm-square btn-primary ms-2"
-                                href="https://www.instagram.com/aguilacomandos?igsh=YmZvMHZtZXFmMWNl"
+                                href="https://www.instagram.com/servicios_valensa?igsh=MXJ2amkwcTBlNWdoOA=="
                                 target="__blank"><i class="bi bi-instagram"></i></a>
-                            <a class="btn btn-sm-square btn-primary ms-2"
-                                href="https://www.tiktok.com/@aguilacomandos?_r=1&_t=ZS-93qR40QmavM" target="__blank"><i
-                                    class="bi bi-tiktok"></i></a>
                         </div>
                     </div>
                 </nav>
@@ -133,11 +127,11 @@
                         </a>
                         <p class="fs-6 mb-4 fst-italic text-white">Productos y servicios de calidad</p>
 
-                        <p><a class="text-decoration-none text-white" href="tel:+50277367641"><i
-                                    class="fa fa-phone-alt me-2"></i>+502 77367641</p></a>
+                        <p><a class="text-decoration-none text-white" href="tel:+50253682021"><i
+                                    class="fa fa-phone-alt me-2"></i>+502 53682021</p></a>
                         <p><a class="text-decoration-none text-white"
-                                href="https://wa.me/50232832297?text=Hola,%20quiero%20más%20información"><i
-                                    class="fa fa-whatsapp me-2"></i>+502 32832297</p></a>
+                                href="https://wa.me/50231862624?text=Hola,%20quiero%20más%20información"><i
+                                    class="fa fa-whatsapp me-2"></i>+502 31862624</p></a>
                         <p><a class="text-decoration-none text-white" href="mailto:<?= $_ENV['EMAIL_TO_ADDRESS'] ?>"><i
                                     class="fa fa-envelope me-2"></i><?= $_ENV['EMAIL_TO_ADDRESS'] ?></p></a>
                         <p><a class="text-decoration-none text-white" target="_blank"
@@ -146,17 +140,13 @@
                                 Jutiapa</p></a>
                         <div class="d-flex mt-4">
                             <a class="btn btn-lg-square btn-primary me-2"
-                                href="https://www.facebook.com/share/1NmhsiXEEs/?mibextid=wwXIfr" target="__blank"><i
+                                href="https://www.facebook.com/share/1CNySxztE8/?mibextid=wwXIfr" target="__blank"><i
                                     class="bi bi-facebook"></i></a>
+
                             <a class="btn btn-lg-square btn-primary me-2"
-                                href="https://www.facebook.com/share/18EFKQPoRt/?mibextid=wwXIfr" target="__blank"><i
-                                    class="bi bi-facebook"></i></a>
-                            <a class="btn btn-lg-square btn-primary me-2"
-                                href="https://www.instagram.com/aguilacomandos?igsh=YmZvMHZtZXFmMWNl"
+                                href="https://www.instagram.com/servicios_valensa?igsh=MXJ2amkwcTBlNWdoOA=="
                                 target="__blank"><i class="bi bi-instagram"></i></a>
-                            <a class="btn btn-lg-square btn-primary me-2"
-                                href="https://www.tiktok.com/@aguilacomandos?_r=1&_t=ZS-93qR40QmavM" target="__blank"><i
-                                    class="bi bi-tiktok"></i></a>
+
                             <!-- <a class="btn btn-lg-square btn-primary me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
                         <a class="btn btn-lg-square btn-primary me-2" href="#"><i class="fab fa-instagram"></i></a> -->
                         </div>
