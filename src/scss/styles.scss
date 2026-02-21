@@ -343,10 +343,10 @@ body {
 
 
 /*** Features ***/
-@for $i from 1 through 1 {
+@for $i from 1 through 3 {
   .feature-#{$i} {
     background: 
-      linear-gradient(rgba(25, 27, 22, 0.7), rgba(25, 27, 22, 0.9)),
+      linear-gradient(rgba(25, 27, 22, 0.4), rgba(25, 27, 22, 0.4)),
       url('../images/feature-#{$i}.jpg') left center no-repeat;
     background-size: cover;
   }

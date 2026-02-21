@@ -11,9 +11,9 @@
             <div class="text-center mx-auto wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s"
                 style="max-width: 600px;">
                 <h1 class="display-6 mb-3">Visión</h1>
-                <p class="mb-5 fs-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum ut facilis
-                    similique molestiae numquam harum natus incidunt voluptatem perferendis repellendus dolorum,
-                    distinctio accusantium, repellat eos odio cum cupiditate aliquam eum.
+                <p class="mb-5 fs-4">Ser la empresa líder en el suministro de herramientas y soluciones técnicas para
+                    perforación de pozos en la región, reconocida por nuestra innovación, calidad, confiabilidad y
+                    respaldo profesional en cada proyecto.
                 </p>
             </div>
         </div>
@@ -21,9 +21,9 @@
             <div class="text-center mx-auto wow animate__animated animate__fadeInRight" data-wow-delay="0.1s"
                 style="max-width: 600px;">
                 <h1 class="display-6 mb-3">Misión</h1>
-                <p class="mb-5 fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed pariatur optio, enim
-                    in blanditiis quasi non, voluptates animi officia dolor hic. Recusandae quas consequatur nam
-                    accusantium optio saepe debitis sequi.
+                <p class="mb-5 fs-4">Proveer herramientas, accesorios y servicios de estudios de suelo de alta calidad
+                    para proyectos de perforación, contribuyendo al desarrollo sostenible mediante soluciones técnicas
+                    confiables, asesoría especializada y compromiso con la excelencia.
                 </p>
             </div>
         </div>

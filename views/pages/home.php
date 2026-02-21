@@ -39,15 +39,35 @@
 <!-- Features Start -->
 <div class="container-fluid py-5">
     <div class="container">
-        <div class="row g-0 feature-row text-white">
-            <div class="col-md-12 feature-1 wow fadeIn" data-wow-delay="0.1s">
-                <div class="feature-item border h-100 p-5">
-                    <h5 class="mb-3 fs-2 fw-bold">Maquinaria y equipo</h5>
-                    <p class="mb-3">Gran variedad de maquinaria y equipo para diferentes propósitos.</p>
-                    <a href="<?= $_ENV['HOST'] ?>/productos/maquinaria" class="btn btn-primary">Ver catálogo</a>
+        <div class="row g-0 feature-row">
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                <div class="feature-1 border h-100 p-5 text-white">
+                    <h5 class="mb-3 fs-4">Maquinaría para perforaciones</h5>
+                    <p class="mb-3">Maquinaría para perforaciones en pozos de agua, minería y construcción.</p>
+                    <a href="<?= $_ENV['HOST'] ?>/productos"
+                        class="btn btn-primary wow animate__animated animate__fadeIn">Ver
+                        más</a>
                 </div>
             </div>
-
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                <div class="feature-2 border h-100 p-5 text-white">
+                    <h5 class="mb-3 fs-4">Accesorios para perforaciones</h5>
+                    <p class="mb-3 text-light">Accesorios para perforaciones en pozos de agua, minería y construcción.
+                    </p>
+                    <a href="<?= $_ENV['HOST'] ?>/productos"
+                        class="btn btn-primary wow animate__animated animate__fadeIn">Ver
+                        más</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                <div class="feature-3 border h-100 p-5 text-white">
+                    <h5 class="mb-3 fs-4">Estudios</h5>
+                    <p class="mb-3 text-light">Estudios para perforaciones en pozos de agua, minería y construcción.</p>
+                    <a target="_blank"
+                        href="https://wa.me/50231862624?text=Hola,%20quiero%20más%20información%20sobre%20estudios"
+                        class="btn btn-primary wow animate__animated animate__fadeIn">Contactar</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

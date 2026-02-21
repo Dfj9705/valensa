@@ -10,29 +10,19 @@
         <div class="col-lg-8 py-5">
             <div class="text-justify mx-auto wow animate__animated animate__fadeInLeft" data-wow-delay="0.1s"
                 style="text-align: justify;">
-                <p class="mb-0 fs-5 text-dark">En Valensa, Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Nisi, maiores at eligendi consectetur exercitationem magnam id aut itaque, explicabo ipsam placeat,
-                    tenetur doloremque veritatis quod necessitatibus sint cumque fugiat sed.
+                <p class="mb-0 fs-5 text-dark">Somos una empresa especializada en la comercialización de herramientas
+                    para perforación de pozos, accesorios especializados y servicios de estudios de suelo. Brindamos
+                    soluciones integrales para proyectos de captación de agua, obras hidráulicas y perforaciones
+                    técnicas, garantizando calidad, precisión y respaldo profesional en cada etapa del proceso.</p>
 
-                    Nos caracterizamos por:
+                <p class="mb-0 fs-5 text-dark">Trabajamos de la mano con perforistas, ingenieros, constructores y
+                    empresas del sector, ofreciendo
+                    productos confiables y asesoría técnica especializada para asegurar resultados eficientes y
+                    duraderos.</p>
 
-
-                <p class="mb-0 fs-5 text-dark">Creemos que la confianza se construye con transparencia, ética y
-                    compromiso. Por ello,
-                    cada cliente
-                    recibe una atención orientada a sus necesidades, con información clara y acompañamiento en cada paso
-                    del proceso.</p>
-
-                <p class="mb-5 fs-5 text-dark">En Valensa, la seguridad y la responsabilidad no son una opción, son
-                    nuestro
-                    principio.</p>
-                <p class="mb-0 fs-3 text-dark text-center">Valensa</p>
-                <blockquote class="mb-0 fs-3 text-dark text-center">Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Ab blanditiis illum veritatis. Eos vero voluptatum magni aliquid et cumque culpa blanditiis,
-                    voluptatem placeat ipsam fugit esse aspernatur, illum deleniti voluptas.
-                    protección se encuentran
-
-                    "</blockquote>
+                <p class="mb-0 fs-3 text-dark text-center">Servicios Valensa</p>
+                <blockquote class="mb-0 fs-3 text-dark text-center">
+                    Soluciones firmes desde la profundidad.</blockquote>
             </div>
 
 
