@@ -137,10 +137,10 @@
                                     class="fa fa-whatsapp me-2"></i>+502 53682021</p></a>
                         <p><a class="text-decoration-none text-white" href="mailto:<?= $_ENV['EMAIL_TO_ADDRESS'] ?>"><i
                                     class="fa fa-envelope me-2"></i><?= $_ENV['EMAIL_TO_ADDRESS'] ?></p></a>
-                        <p><a class="text-decoration-none text-white" target="_blank"
-                                href="https://www.google.com/maps/dir/?api=1&destination=armeria%20aguila%20comandos%2C%20jutiapa%2C%20jutiapa"><i
-                                    class="fa fa-map-marker-alt me-2"></i>0 CALLE PARQUE ALDEA AMBERES, SANTA ROSA DE
-                                LIMA, SANTA ROSA</p></a>
+                        <p class="text-white"><i class="fa fa-map-marker-alt me-2"></i>0 CALLE PARQUE ALDEA AMBERES,
+                            SANTA
+                            ROSA DE
+                            LIMA, SANTA ROSA</p>
                         <div class="d-flex mt-4">
                             <a class="btn btn-lg-square btn-primary me-2"
                                 href="https://www.facebook.com/share/1CNySxztE8/?mibextid=wwXIfr" target="__blank"><i
@@ -165,7 +165,9 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-6 text-center text-md-start">
-                        <p class="mb-0 text-center">&copy; Procode Innovations GT <?= date('Y') ?></p>
+                        <p class="mb-0 text-center">&copy; <a href="https://procodegt.com"
+                                class="text-white text-decoration-none" target="_blank">Procodegt</a>
+                            <?= date('Y') ?></p>
                     </div>
                 </div>
             </div>
